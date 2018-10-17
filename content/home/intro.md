@@ -1,0 +1,1 @@
+Hello world - my name is Mike, and I'm a Full Stack Software Engineer, Photographer and an Artist.
