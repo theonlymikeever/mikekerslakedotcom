@@ -1,0 +1,1 @@
+I am primarily a JavaScript developer, who has an affinity for building with React. Below are the most recent software projects I've developed or have had the pleasure of working on with a team. For a full list of what I'm currently working on, please checkout my [Github](https://github.com/theonlymikeever).

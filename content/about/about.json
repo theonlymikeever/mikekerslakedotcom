@@ -1,5 +1,10 @@
 {
   "title": "About",
   "content": "content.md",
-  "image": "../images/about/headshot.jpg"
+  "image": "../images/about/headshot.jpg",
+  "skills": {
+    "proficient": ["one", "two", "three"],
+    "knowledgeable": ["something"],
+    "some experience": ["else"]
+  }
 }

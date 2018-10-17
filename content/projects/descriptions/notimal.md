@@ -1,0 +1,3 @@
+An application to help herbivores discover and research which food items or recipes are vegan or vegetarian, on the go. Application will parse your search and query Edaman's database to render item or recipe results. Results without elicit labeling have their ingredients filtered with an algorithm to determine 'vegan' status. Nutrients are provided by the API and images are attached to the info card via Google.
+
+Developed during a single ‘hackathon’ weekend. Created from the ground up with the NERDS stack (React, Redux, PostgreSQL, Node, Express), Passport, Edaman API, Google Images API, and Twitter Bootstrap.

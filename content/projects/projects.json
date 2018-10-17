@@ -1,0 +1,41 @@
+{
+  "title": "Software Projects",
+  "content": "projects.md",
+  "projects": [{
+    "title": "autobs cli",
+    "role": "Developer, Maintainer",
+    "timeframe": "August 2018 - ongoing",
+    "description": "descriptions/autobscli.md",
+    "image": "https://fillmurray.com/200/300"
+  },{
+    "title": "mvt.js",
+    "role": "Developer, Maintainer",
+    "timeframe": "June 2018 - ongoing",
+    "description": "descriptions/mvtjs.md",
+    "image": "https://fillmurray.com/400/300"
+  },{
+    "title": "ParQ",
+    "role": "Developer",
+    "timeframe": "December 2017 - ongoing",
+    "description": "descriptions/parq",
+    "demoLink": "https://www.youtube.com/watch?v=IBguwJC_eJk",
+    "githubLink": "https://github.com/theonlymikeever/ParQ",
+    "image": "https://fillmurray.com/300/400"
+  },{
+    "title": "notimal",
+    "role": "Sole Developer",
+    "timeframe": "November 2017 - ongoing",
+    "description": "descriptions/notimal.md",
+    "demoLink": "https://www.youtube.com/watch?v=SWb_65KQF28&index=1&t=20s&list=PLY2fp7Xi5kcJfhmhgsPbTkWu_dYApQMF1",
+    "githubLink": "https://github.com/theonlymikeever/notimal",
+    "image": "https://fillmurray.com/100/100"
+  },{
+    "title": "Wayne Warehouse",
+    "role": "Developer",
+    "timeframe": "October - November 2017",
+    "description": "descriptions/waynewarehouse.md",
+    "demoLink": "https://wayne-ware.herokuapp.com/",
+    "githubLink": "https://github.com/theonlymikeever/waynewarehouse",
+    "image": "https://fillmurray.com/500/500"
+  }]
+}

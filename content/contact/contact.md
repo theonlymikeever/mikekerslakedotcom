@@ -1,0 +1,1 @@
+Whether you want collaborate, request a copy of my resume, or add me on Battle.net, you can find me on the social platforms below, or by emailing me.

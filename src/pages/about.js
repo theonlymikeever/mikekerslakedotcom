@@ -26,6 +26,9 @@ About.propTypes = {
 
 export default About;
 
+// const duoToneBlue = 'highlight: "#0ec4f1", shadow: "#192550"';
+// const duoToneRed = 'highlight: "#f00e2e", shadow: "#192550", opacity: 90';
+
 export const query = graphql`
   query AboutQuery {
     aboutJson {
@@ -40,11 +43,16 @@ export const query = graphql`
           fluid(
             maxHeight: 500
             quality: 90
-            duotone: { highlight: "#f00e2e", shadow: "#192550" }
+            duotone: { highlight: "#0ec4f1", shadow: "#192550" }
           ) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
+      }
+      skills {
+        proficient
+        knowledgeable
+        some_experience
       }
     }
   }

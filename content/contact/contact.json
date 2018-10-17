@@ -1,0 +1,26 @@
+{
+  "title": "Contact",
+  "content": "content.md",
+  "socialLinks": [
+    {
+      "type": "email",
+      "url": "mailto:hello@mikekerslake.com"
+    },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/in/michael-kerslake/"
+    },
+    {
+      "type": "twitter",
+      "url": "https://www.twitter.com/mikekerslake"
+    },
+    {
+      "type": "medium",
+      "url": "https://medium.com/@theonlymikeever"
+    },
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/theonlymikeever/"
+    },
+  ]
+}
