@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import posed from 'react-pose';
 import { Container } from './header.css';
@@ -22,11 +22,11 @@ const AnimatedContainer = posed.div({
   },
 });
 
-const Header = ({ title }) => (
+const Header = () => (
   <AnimatedContainer>
     <Container>
       <Link to="/">
-        <Title as="h1">{title}</Title>
+        <Title as="h1"><span>Mike</span> Kerslake</Title>
       </Link>
 
       <Nav />
@@ -34,8 +34,8 @@ const Header = ({ title }) => (
   </AnimatedContainer>
 );
 
-Header.propTypes = {
-  title: PropTypes.string.isRequired,
-};
+// Header.propTypes = {
+//   title: PropTypes.string.isRequired,
+// };
 
 export default Header;

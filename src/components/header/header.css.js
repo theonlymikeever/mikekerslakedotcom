@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { primary, accent } from 'constants/theme';
 
 export const Container = styled.header`
   display: flex;
@@ -8,6 +9,14 @@ export const Container = styled.header`
   flex-wrap: wrap;
   margin: 0 auto;
   max-width: 800px;
+
+  h1 {
+    color: ${accent};
+    span {
+      font-weight: bold;
+      color: ${primary};
+    }
+  }
 
   a {
     color: #757575;

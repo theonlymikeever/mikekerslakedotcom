@@ -5,11 +5,15 @@ import Layout from 'components/layout';
 import Box from 'components/box';
 import Head from 'components/head';
 import ProjectCard from 'components/project-card';
+import Title from 'components/title';
 
 const Projects = ({ data }) => (
   <Layout>
     <Head pageTitle={data.projectsJson.title} />
     <Box>
+      <Title as="h2" size="large">
+        {data.projectsJson.title}
+      </Title>
       <div
         dangerouslySetInnerHTML={{
           __html: data.projectsJson.content.childMarkdownRemark.html,

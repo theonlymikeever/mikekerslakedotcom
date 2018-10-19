@@ -1,1 +1,1 @@
-Hello world - my name is Mike, and I'm a Full Stack Developer, Photographer and an Artist.
+Full Stack Developer, Photographer and Artist.
