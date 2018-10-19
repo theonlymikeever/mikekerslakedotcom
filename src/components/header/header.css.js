@@ -6,6 +6,8 @@ export const Container = styled.header`
   align-items: center;
   padding: 4rem;
   flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 800px;
 
   a {
     color: #757575;

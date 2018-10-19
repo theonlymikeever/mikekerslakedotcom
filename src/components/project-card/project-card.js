@@ -1,5 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {
+  CardContainer,
+  ImageBox,
+  Image,
+  InfoBox,
+  Heading,
+  SubHeading,
+  Link,
+  LinkBox,
+} from './project-card.css';
 
 const ProjectCard = ({
   title,
@@ -10,33 +20,28 @@ const ProjectCard = ({
   demoLink,
   githubLink,
 }) => (
-  <div>
-    <h2>{title}</h2>
-    <p>Role: {role}</p>
-    <p>Timeframe: {timeframe}</p>
-    {description ? (
-      <div
-        dangerouslySetInnerHTML={{
-          __html: description.childMarkdownRemark.html,
-        }}
-      />
-    ) : null}
-    <img src={image} alt={title} />
-    {demoLink ? (
-      <p>
-        <a href={demoLink}>Demo</a>{' '}
-      </p>
-    ) : (
-      ' '
-    )}
-    {githubLink ? (
-        <p>
-          <a href={githubLink}>Github</a>{' '}
-        </p>
-      ) : (
-        ' '
-      )}
-  </div>
+  <CardContainer>
+    <ImageBox>
+      <Image src={image} alt={title} />
+      <LinkBox>
+        {demoLink ? <Link href={demoLink}>Demo</Link> : ' '}
+        {githubLink ? <Link href={githubLink}>Github</Link> : ' '}
+      </LinkBox>
+    </ImageBox>
+    <InfoBox>
+      <Heading>{title}</Heading>
+      <SubHeading>
+        <span>{role}</span> | {timeframe}
+      </SubHeading>
+      {description ? (
+        <div
+          dangerouslySetInnerHTML={{
+            __html: description.childMarkdownRemark.html,
+          }}
+        />
+      ) : null}
+    </InfoBox>
+  </CardContainer>
 );
 
 ProjectCard.propTypes = {
@@ -47,6 +52,6 @@ ProjectCard.propTypes = {
   image: PropTypes.string,
   demoLink: PropTypes.string,
   githubLink: PropTypes.string,
-}
+};
 
 export default ProjectCard;
