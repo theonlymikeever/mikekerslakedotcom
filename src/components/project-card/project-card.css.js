@@ -42,7 +42,7 @@ export const InfoBox = styled.div`
   flex: 2;
   display: flex;
   flex-direction: column;
-  padding: 0.5rem;
+  padding: 0 0.75rem;
 `;
 
 export const Heading = styled.h2`
