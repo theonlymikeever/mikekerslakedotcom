@@ -48,6 +48,16 @@ export default createGlobalStyle`
     font-variant-numeric: proportional-nums;
   }
 
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
   ol, ul {
     list-style: none;
   }
