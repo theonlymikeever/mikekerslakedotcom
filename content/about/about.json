@@ -1,7 +1,7 @@
 {
   "title": "About",
   "content": "content.md",
-  "image": "../images/about/headshot.jpg",
+  "image": "../images/about/headshot-wide.png",
   "skills": {
     "proficient": ["one", "two", "three"],
     "knowledgeable": ["something"],

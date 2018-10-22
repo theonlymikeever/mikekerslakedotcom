@@ -10,12 +10,7 @@ const About = ({ data }) => (
   <Layout>
     <Head pageTitle={data.aboutJson.title} />
     <Box>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: data.aboutJson.content.childMarkdownRemark.html,
-        }}
-      />
-      <PortraitContainer image={data.aboutJson.image} />
+      <PortraitContainer {...data.aboutJson} />
     </Box>
   </Layout>
 );
