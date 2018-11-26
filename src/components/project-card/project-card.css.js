@@ -60,25 +60,42 @@ export const SubHeading = styled.h3`
 `;
 
 export const LinkBox = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+  grid-gap: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
   align-content: center;
-  justify-content: space-between;
-  margin: 0.5em 0;
 `;
 
 export const Link = styled.a`
-  display: inline-block;
   background: linear-gradient(to right, #00d2ff, #3a7bd5);
   border-radius: 0.25rem;
-  width: 125px;
   padding: 1rem;
   text-align: center;
   color: #fff;
   text-decoration: none;
   transition-duration: 0.3s;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  /* &:before {
+    border-radius: inherit;
+    background-image: linear-gradient(from left #3a7bd5, #00d2ff);
+    content: '';    
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0;
+    width: 100%;
+    z-index: -100;
+    transition: opacity 0.45s;
+  }
+  
+  &:hover::before {
+      opacity: 1;
+  } */
 
   &:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.10), 0 10px 10px rgba(0, 0, 0, 0.05);
   }
 `;
