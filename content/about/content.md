@@ -1,4 +1,5 @@
-# About
+# About Me
+## Full Stack Developer, Photographer and Artist.
 
 My passion lies in the blend of art and technology. Because user experience is everything around us, digital and physical, it's my goal to understand the nuance. To create aesthetically pleasing and intuitive applications requires meticulous technical ability, extensive engagement research and an artistic repertoire.
 

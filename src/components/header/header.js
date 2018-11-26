@@ -26,9 +26,10 @@ const Header = () => (
   <AnimatedContainer>
     <Container>
       <Link to="/">
-        <Title as="h1"><span>Mike</span> Kerslake</Title>
+        <Title as="h1">
+          <span>Mike</span> Kerslake
+        </Title>
       </Link>
-
       <Nav />
     </Container>
   </AnimatedContainer>

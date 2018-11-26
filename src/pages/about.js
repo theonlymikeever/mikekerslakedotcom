@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Layout from 'components/layout';
 import Box from 'components/box';
 import Head from 'components/head';
@@ -11,6 +11,7 @@ const About = ({ data }) => (
     <Head pageTitle={data.aboutJson.title} />
     <Box>
       <PortraitContainer {...data.aboutJson} />
+      <Link to="/">&lt; Back</Link>
     </Box>
   </Layout>
 );

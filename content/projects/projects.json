@@ -2,7 +2,14 @@
   "title": "Software Projects",
   "content": "projects.md",
   "projects": [{
-    "title": "autobs cli",
+    "title": "obey the coin - cli",
+    "role": "Developer, Maintainer",
+    "timeframe": "November 2018 - ongoing",
+    "description": "descriptions/obey-the-coin.md",
+    "githubLink": "https://github.com/theonlymikeever/obey-the-coin-cli",
+    "image": "https://fillmurray.com/500/500"
+  },{
+    "title": "autobs - cli",
     "role": "Developer, Maintainer",
     "timeframe": "August 2018 - ongoing",
     "description": "descriptions/autobscli.md",
@@ -16,7 +23,7 @@
   },{
     "title": "ParQ",
     "role": "Developer",
-    "timeframe": "December 2017 - ongoing",
+    "timeframe": "December 2017",
     "description": "descriptions/parq.md",
     "demoLink": "https://www.youtube.com/watch?v=IBguwJC_eJk",
     "githubLink": "https://github.com/theonlymikeever/ParQ",

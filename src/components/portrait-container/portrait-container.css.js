@@ -18,6 +18,14 @@ export const Container = styled.div`
     `};
   }
 
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    ${MEDIA.PHONE`
+      color: #000000;
+    `};
+  }
+
   div:last-child {
     z-index: 300;
     position: absolute;
