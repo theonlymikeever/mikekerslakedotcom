@@ -96,6 +96,6 @@ export const Link = styled.a`
   } */
 
   &:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.10), 0 10px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.05);
   }
 `;
