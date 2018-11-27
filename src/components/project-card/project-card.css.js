@@ -28,8 +28,8 @@ export const CardContainer = styled.div`
 
 export const ImageBox = styled.div`
   flex: 1;
-  width: 100%;
-  max-width: 300px;
+  /* width: 100%; */
+  max-width: 100%;
 `;
 
 export const Image = styled.img`

@@ -4,6 +4,7 @@ import Layout from 'components/layout';
 import Box from 'components/box';
 import Title from 'components/title';
 import Gallery from 'components/gallery';
+import CtaGrid from 'components/cta-grid';
 import { graphql } from 'gatsby';
 
 const Index = ({ data }) => (
@@ -13,6 +14,7 @@ const Index = ({ data }) => (
         {data.homeJson.content.childMarkdownRemark.rawMarkdownBody}
       </Title>
     </Box>
+    <CtaGrid />
     <Gallery items={data.homeJson.gallery} />
     <div style={{ height: '50vh' }} />
   </Layout>
