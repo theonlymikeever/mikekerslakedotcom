@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import MEDIA from 'helpers/mediaTemplates';
 
 export const Container = styled.div`
-  max-width: 1000px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   display: grid;
@@ -23,7 +23,7 @@ export const ImgBox = styled.div`
   grid-template-rows: 1fr;
 
   .overlay {
-    background: #0078de80;
+    background: ${props => (props.color ? props.color : '#0078de80')};
     grid-column: 1 / -1;
     grid-row: 1 / -1;
     position: relative;
