@@ -1,37 +1,40 @@
+/* eslint-disable */
 import React from 'react';
 import { Container, ImgBox } from './cta-grid.css';
 import { Link } from 'gatsby';
+import {
+  accentTrans,
+  pinkTrans,
+  yellowTrans,
+  tealTrans,
+} from '../../constants/theme';
 
-function CtaGrid() {
+const colors = [accentTrans, tealTrans, yellowTrans];
+
+function CtaGrid({ ctas }) {
   return (
     <Container>
-      <ImgBox color="#0078de80">
-        <img src="https://source.unsplash.com/random/400x700" alt="something" />
-        <div className="overlay">
-          <h2>Software</h2>
-        </div>
-        <Link to="/projects" className="click-overlay">
-          <p>View Software</p>
-        </Link>
-      </ImgBox>
-      <ImgBox color="#EFBC6480">
-        <img src="https://source.unsplash.com/random/400x700" alt="something" />
-        <div className="overlay">
-          <h2>Photography</h2>
-        </div>
-        <a href="photography.mikekerslake.com" className="click-overlay">
-          <p>View Photography</p>
-        </a>
-      </ImgBox>
-      <ImgBox color="#0DCFE699">
-        <img src="https://source.unsplash.com/random/400x700" alt="something" />
-        <div className="overlay">
-          <h2>Video</h2>
-        </div>
-        <Link to="/" className="click-overlay">
-          <p>Soon!</p>
-        </Link>
-      </ImgBox>
+      {ctas &&
+        ctas.map((item, idx) => {
+          const { src } = item.image.childImageSharp.fixed || '';
+          return (
+            <ImgBox color={colors[idx]} key={idx}>
+              <img src={src} alt={item.title} />
+              <div className="overlay">
+                <h2>{item.title}</h2>
+              </div>
+              {item.link.slice(0, 4) === 'http' ? (
+                <a href={item.link} className="click-overlay">
+                  <p>{item.button}</p>
+                </a>
+              ) : (
+                <Link to={item.link} className="click-overlay">
+                  <p>{item.button}</p>
+                </Link>
+              )}
+            </ImgBox>
+          );
+        })}
     </Container>
   );
 }

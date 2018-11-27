@@ -21,7 +21,7 @@ export const FooterContainer = styled.div`
   .copyright {
     display: grid;
     align-items: center;
-    justify-items: start;
+    justify-self: start;
     grid-template-rows: auto;
     grid-gap: 5px;
 

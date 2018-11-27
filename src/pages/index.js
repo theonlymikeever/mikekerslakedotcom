@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Layout from 'components/layout';
 import Box from 'components/box';
 import Title from 'components/title';
-import Gallery from 'components/gallery';
+// import Gallery from 'components/gallery';
 import CtaGrid from 'components/cta-grid';
 import { graphql } from 'gatsby';
 
@@ -13,11 +13,23 @@ const Index = ({ data }) => (
       <Title as="h2">
         {data.homeJson.content.childMarkdownRemark.rawMarkdownBody}
       </Title>
+      <CtaGrid ctas={data.homeJson.ctas} />
     </Box>
-    <CtaGrid />
-    <Gallery items={data.homeJson.gallery} />
   </Layout>
 );
+
+// const Index = ({ data }) => (
+//   <Layout>
+//     <Box>
+//       <Title as="h2">
+//         {data.homeJson.content.childMarkdownRemark.rawMarkdownBody}
+//       </Title>
+//       <CtaGrid />
+//       <Title as="h3">Writings</Title>
+//     </Box>
+//     <Gallery items={data.homeJson.gallery} />
+//   </Layout>
+// );
 
 Index.propTypes = {
   data: PropTypes.object.isRequired,
@@ -42,6 +54,18 @@ export const query = graphql`
           childImageSharp {
             fluid(maxHeight: 500, quality: 90) {
               ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+      ctas {
+        title
+        link
+        button
+        image {
+          childImageSharp {
+            fixed(height: 400) {
+              src
             }
           }
         }
