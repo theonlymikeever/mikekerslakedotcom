@@ -25,7 +25,7 @@ const AnimatedContainer = posed.div({
 const Header = () => (
   <AnimatedContainer>
     <Container>
-      <Link to="/">
+      <Link to="/" className="title">
         <Title as="h1">
           <span>Mike</span> Kerslake
         </Title>

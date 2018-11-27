@@ -1,22 +1,38 @@
 import styled from 'styled-components';
-import { primary, accent } from 'constants/theme';
+import { primary, accent, pink } from 'constants/theme';
 import MEDIA from 'helpers/mediaTemplates';
 
+
 export const Container = styled.header`
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding: 4rem 4rem 1rem 4rem;
-  flex-wrap: wrap;
-  margin: 0 auto;
+  grid-template-areas: 'title nav';
   max-width: 800px;
+  margin: 0 auto 1rem auto;
+  padding: 4rem 0 0 0;
+
+  nav {
+    justify-self: end;
+  }
+
+  > a {
+    /* this is the h1 */
+    justify-self: start;
+    color: ${accent};
+    span {
+      font-weight: bold;
+      color: ${primary};
+    }
+  }
 
   ${MEDIA.PHONE`
     padding: 2rem;
-    justify-content: center;
+    /* justify-content: center; */
   `};
 
   h1 {
+    margin-bottom: 0;
     color: ${accent};
     span {
       font-weight: bold;
@@ -28,10 +44,11 @@ export const Container = styled.header`
     color: #757575;
     transition: color 0.2s ease;
     text-decoration: none;
-    margin-bottom: 2rem;
+    /* padding: 0 8px; */
 
     &:hover {
-      color: inherit;
+      color: ${pink};
+      font-weight: bold;
     }
   }
 `;
