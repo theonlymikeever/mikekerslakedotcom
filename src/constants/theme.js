@@ -5,6 +5,7 @@ export const light = '#00d2ff';
 export const pink = '#c6426e';
 export const purple = '#642b73';
 export const red = '#f90000';
+export const grey = '#757575';
 
 // Transparencies
 export const accentTrans = '#259BE499';
