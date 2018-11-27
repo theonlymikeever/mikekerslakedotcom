@@ -3,18 +3,16 @@ import styled from 'styled-components';
 import MEDIA from 'helpers/mediaTemplates';
 
 export const Container = styled.div`
-  /* min-width: 700px; */
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
-  /* justify-items: center;
-  align-content: center; */
+
   ${MEDIA.PHONE`
-      max-width: 300px;
-      grid-template-columns: 1fr;
+    max-width: 300px;
+    grid-template-columns: 1fr;
   `};
 `;
 
