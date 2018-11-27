@@ -5,10 +5,10 @@ export const FooterContainer = styled.div`
   padding: 25px 10px;
   max-width: 800px;
   margin: 0 auto;
-  text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
+  align-items: center;
 
   .social-icons {
     justify-self: end;
