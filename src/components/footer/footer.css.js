@@ -10,13 +10,23 @@ export const FooterContainer = styled.div`
   grid-template-columns: 1fr 1fr;
   justify-items: center;
 
-  div {
-    /* background: green; */
-  }
   .social-icons {
     justify-self: end;
+
+    svg {
+      padding: 0 10px;
+    }
   }
+
   .copyright {
-    justify-self: start;
+    display: grid;
+    align-items: center;
+    justify-items: start;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+
+    .bold {
+      font-weight: 700;
+    }
   }
 `;
