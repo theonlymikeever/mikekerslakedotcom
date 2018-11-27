@@ -20,7 +20,7 @@ function CtaGrid() {
           <h2>Photography</h2>
         </div>
         <a href="photography.mikekerslake.com" className="click-overlay">
-          <p>View Software</p>
+          <p>View Photography</p>
         </a>
       </ImgBox>
       <ImgBox color="#0DCFE699">
