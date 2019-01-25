@@ -30,5 +30,6 @@ export const Text = styled.span`
           return '2rem';
       }
     }};
+    text-align: center;
   `};
 `;

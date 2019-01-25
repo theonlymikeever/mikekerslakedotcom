@@ -1,1 +1,1 @@
-Full Stack Developer, Photographer and Artist.
+Idle hands build nothing.
