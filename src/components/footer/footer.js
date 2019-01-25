@@ -5,7 +5,7 @@ import { InstagramIcon, LinkedInIcon, TwitterIcon } from '../social-icons';
 const CopyRightFooter = () => (
   <div className="copyright">
     <span className="bold">© {new Date().getFullYear()} Mike Kerslake.</span>
-    Site built on React & probably too much coffee.
+    Site built w/ React & too much coffee (probably).
   </div>
 );
 
