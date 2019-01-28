@@ -11,7 +11,9 @@ const About = ({ data }) => (
     <Head pageTitle={data.aboutJson.title} />
     <Box>
       <PortraitContainer {...data.aboutJson} />
-      <Link to="/">&lt; Back</Link>
+      <Link to="/" style={{ display: 'block' }}>
+        &lt; Back
+      </Link>
     </Box>
   </Layout>
 );
