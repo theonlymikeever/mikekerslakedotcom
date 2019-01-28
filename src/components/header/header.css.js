@@ -4,30 +4,33 @@ import MEDIA from 'helpers/mediaTemplates';
 
 export const Container = styled.header`
   display: grid;
-  grid-template-columns: 1fr 1fr;
   align-items: center;
-  grid-template-areas: 'title nav';
   max-width: 800px;
   margin: 0 auto 1rem auto;
-  padding: 4rem 0 0 0;
+
+  padding: 2rem;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  grid-template-areas: 
+    'title'
+    'nav';
 
   .title {
     margin-bottom: 0;
     color: ${accent};
-    justify-self: start;
     color: ${accent};
+    justify-self: center;
     span {
       font-weight: bold;
       color: ${primary};
     }
-    ${MEDIA.PHONE`
-      justify-self: center;
-      grid-area: title;
+    ${MEDIA.MIN_DESKTOP`
+      justify-self: start;
     `};
   }
 
   nav {
-    justify-self: end;
+    justify-self: center;
     a {
       color: ${grey};
       transition: color 0.2s ease;
@@ -37,18 +40,16 @@ export const Container = styled.header`
         font-weight: bold;
       }
     }
-    ${MEDIA.PHONE`
-      justify-self: center;
+    ${MEDIA.MIN_DESKTOP`
+      justify-self: end;
       grid-area: nav;
     `};
   }
 
-  ${MEDIA.PHONE`
-    padding: 2rem;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
-    grid-template-areas: 
-      'title'
-      'nav';
+  ${MEDIA.MIN_DESKTOP`
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'title nav';
+    padding: 4rem 0 0 0;
+    grid-gap: 0;
   `};
 `;
