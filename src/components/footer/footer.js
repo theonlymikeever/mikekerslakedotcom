@@ -14,13 +14,13 @@ function Footer() {
     <FooterContainer>
       <CopyRightFooter />
       <div className="social-icons">
-        <a href="/">
+        <a href="https://instagram.com/theonlymikeever">
           <InstagramIcon width={25} height={25} />
         </a>
-        <a href="/">
+        <a href="https://www.linkedin.com/in/michael-kerslake">
           <LinkedInIcon width={25} height={25} />
         </a>
-        <a href="/">
+        <a href="https://twitter.com/mikekerslake">
           <TwitterIcon width={25} height={25} />
         </a>
       </div>
