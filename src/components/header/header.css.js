@@ -11,7 +11,7 @@ export const Container = styled.header`
   padding: 2rem;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
-  grid-template-areas: 
+  grid-template-areas:
     'title'
     'nav';
 
