@@ -14,13 +14,13 @@
     "role": "Developer, Maintainer",
     "timeframe": "August 2018 - ongoing",
     "description": "descriptions/autobscli.md",
-    "image": "../images/software-projects/otc-screen.png"
+    "image": "../images/software-projects/autobs-screen.png"
   },{
     "title": "mvt.js",
     "role": "Developer, Maintainer",
     "timeframe": "June 2018 - ongoing",
     "description": "descriptions/mvtjs.md",
-    "image": "../images/software-projects/otc-screen.png"
+    "image": "../images/software-projects/mvtjs-screen.png"
   },{
     "title": "ParQ",
     "role": "Developer",
@@ -28,7 +28,7 @@
     "description": "descriptions/parq.md",
     "demoLink": "https://www.youtube.com/watch?v=IBguwJC_eJk",
     "githubLink": "https://github.com/theonlymikeever/ParQ",
-    "image": "../images/software-projects/otc-screen.png"
+    "image": "../images/software-projects/parq-screen.png"
   },{
     "title": "notimal",
     "role": "Sole Developer",
@@ -36,7 +36,7 @@
     "description": "descriptions/notimal.md",
     "demoLink": "https://www.youtube.com/watch?v=SWb_65KQF28&index=1&t=20s&list=PLY2fp7Xi5kcJfhmhgsPbTkWu_dYApQMF1",
     "githubLink": "https://github.com/theonlymikeever/notimal",
-    "image": "../images/software-projects/otc-screen.png"
+    "image": "../images/software-projects/notimal-screen.png"
   },{
     "title": "Wayne Warehouse",
     "role": "Developer",
@@ -44,6 +44,6 @@
     "description": "descriptions/waynewarehouse.md",
     "demoLink": "https://wayne-ware.herokuapp.com/",
     "githubLink": "https://github.com/theonlymikeever/waynewarehouse",
-    "image": "../images/software-projects/otc-screen.png"
+    "image": "../images/software-projects/waynewarehouse-screen.png"
   }]
 }
