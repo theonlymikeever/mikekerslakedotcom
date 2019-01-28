@@ -11,7 +11,7 @@ export const Container = styled.div`
   max-width: 800px;
 
   ${MEDIA.TABLET`
-    display: block;
+    grid-template-columns: repeat(1,1fr);
   `};
 `;
 
