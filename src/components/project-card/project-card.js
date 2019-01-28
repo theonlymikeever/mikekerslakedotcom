@@ -16,8 +16,8 @@ const Heading = ({ title, role, timeframe }) => {
   return (
     <HeadingBox>
       <Title>{title}</Title>
-      <SubTitle>{timeframe}</SubTitle>
       <SubTitle bold>{role}</SubTitle>
+      <SubTitle>{timeframe}</SubTitle>
     </HeadingBox>
   );
 };

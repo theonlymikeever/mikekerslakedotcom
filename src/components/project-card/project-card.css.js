@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { accent, pink } from 'constants/theme';
-// import MEDIA from 'helpers/mediaTemplates';
+import MEDIA from 'helpers/mediaTemplates';
 
 export const CardContainer = styled.div`
   display: flex;
@@ -8,8 +8,6 @@ export const CardContainer = styled.div`
   justify-content: center;
   margin-bottom: 1rem;
   padding: 0.5rem;
-  /* background: linear-gradient(to right, #be93c5, #7bc6cc); */
-  /* box-shadow: 0 1px 3px rgba(0,0,0,0.09), 0 1px 2px rgba(0,0,0,0.15); */
 
   li {
     margin: 0.5em;
@@ -35,7 +33,7 @@ export const Image = styled.img`
   width: 100%;
   min-width: 300px;
   border-radius: 0.25rem;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 `;
 
 export const InfoBox = styled.div`
@@ -49,6 +47,7 @@ export const Title = styled.h2`
   font-weight: bold;
   font-size: 1.5em;
   margin-bottom: 0.35rem;
+  grid-column: span 2;
 `;
 
 export const SubTitle = styled.h3`
@@ -56,11 +55,26 @@ export const SubTitle = styled.h3`
   padding-bottom: 0.35rem;
   display: block;
   font-weight: ${props => (props.bold ? 'bold' : 'inherit')};
+  grid-column: span 2;
+  ${MEDIA.PHONE`
+    justify-self: start;
+  `};
 `;
 
 export const HeadingBox = styled.div`
   border-bottom: 1px #e0e0e0 solid;
   margin-bottom: 0.75rem;
+  display: grid;
+  grid-template-columns: [l1] 1fr [l2] 1fr;
+
+  ${MEDIA.MIN_DESKTOP`
+    h3 {
+      grid-column: span 1;
+    }
+    h3:last-child {
+      justify-self: end;
+    }
+  `};
 `;
 
 export const LinkBox = styled.div`
