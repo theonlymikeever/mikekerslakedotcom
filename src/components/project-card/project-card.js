@@ -5,11 +5,22 @@ import {
   ImageBox,
   Image,
   InfoBox,
-  Heading,
-  SubHeading,
+  Title,
+  SubTitle,
   Link,
   LinkBox,
+  HeadingBox,
 } from './project-card.css';
+
+const Heading = ({ title, role, timeframe }) => {
+  return (
+    <HeadingBox>
+      <Title>{title}</Title>
+      <SubTitle>{timeframe}</SubTitle>
+      <SubTitle bold>{role}</SubTitle>
+    </HeadingBox>
+  );
+};
 
 const ProjectCard = ({
   title,
@@ -31,10 +42,11 @@ const ProjectCard = ({
       </LinkBox>
     </ImageBox>
     <InfoBox>
-      <Heading>{title}</Heading>
-      <SubHeading>
+      {/* <Title>{title}</Title>
+      <SubTitle>
         <span>{role}</span> | {timeframe}
-      </SubHeading>
+      </SubTitle> */}
+      <Heading title={title} role={role} timeframe={timeframe} />
       {description ? (
         <div
           dangerouslySetInnerHTML={{
@@ -55,6 +67,12 @@ ProjectCard.propTypes = {
   demoLink: PropTypes.string,
   githubLink: PropTypes.string,
   npmLink: PropTypes.string,
+};
+
+Heading.propTypes = {
+  title: PropTypes.string,
+  role: PropTypes.string,
+  timeframe: PropTypes.string,
 };
 
 export default ProjectCard;

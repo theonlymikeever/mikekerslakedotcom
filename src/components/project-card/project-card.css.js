@@ -28,14 +28,14 @@ export const CardContainer = styled.div`
 
 export const ImageBox = styled.div`
   flex: 1;
-  /* width: 100%; */
-  max-width: 100%;
+  max-width: 300px;
 `;
 
 export const Image = styled.img`
   width: 100%;
   min-width: 300px;
   border-radius: 0.25rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 `;
 
 export const InfoBox = styled.div`
@@ -45,18 +45,22 @@ export const InfoBox = styled.div`
   padding: 0 0.75rem;
 `;
 
-export const Heading = styled.h2`
+export const Title = styled.h2`
   font-weight: bold;
   font-size: 1.5em;
-  padding-bottom: 0.35rem;
+  margin-bottom: 0.35rem;
 `;
 
-export const SubHeading = styled.h3`
+export const SubTitle = styled.h3`
   color: ${pink};
   padding-bottom: 0.35rem;
-  span {
-    font-weight: bold;
-  }
+  display: block;
+  font-weight: ${props => (props.bold ? 'bold' : 'inherit')};
+`;
+
+export const HeadingBox = styled.div`
+  border-bottom: 1px #e0e0e0 solid;
+  margin-bottom: 0.75rem;
 `;
 
 export const LinkBox = styled.div`
@@ -77,23 +81,6 @@ export const Link = styled.a`
   text-decoration: none;
   transition-duration: 0.3s;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  /* &:before {
-    border-radius: inherit;
-    background-image: linear-gradient(from left #3a7bd5, #00d2ff);
-    content: '';    
-    display: block;
-    height: 100%;
-    position: absolute;
-    top: 0; left: 0;
-    opacity: 0;
-    width: 100%;
-    z-index: -100;
-    transition: opacity 0.45s;
-  }
-  
-  &:hover::before {
-      opacity: 1;
-  } */
 
   &:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.05);
