@@ -19,13 +19,15 @@ const ProjectCard = ({
   image,
   demoLink,
   githubLink,
+  npmLink,
 }) => (
   <CardContainer>
     <ImageBox>
-      <Image src={image} alt={title} />
+      <Image src={image.childImageSharp.fluid.src} alt={title} />
       <LinkBox>
         {demoLink ? <Link href={demoLink}>Demo</Link> : ' '}
         {githubLink ? <Link href={githubLink}>Github</Link> : ' '}
+        {npmLink ? <Link href={npmLink}>NPM</Link> : ' '}
       </LinkBox>
     </ImageBox>
     <InfoBox>
@@ -49,9 +51,10 @@ ProjectCard.propTypes = {
   role: PropTypes.string,
   timeframe: PropTypes.string,
   description: PropTypes.object,
-  image: PropTypes.string,
+  image: PropTypes.object,
   demoLink: PropTypes.string,
   githubLink: PropTypes.string,
+  npmLink: PropTypes.string,
 };
 
 export default ProjectCard;
