@@ -26,12 +26,12 @@
     "title": "Photography",
     "link": "http://photography.mikekerslake.com",
     "button": "View Photography",
-    "image": "../images/cta-bgs/code.png"
+    "image": "../images/cta-bgs/photography.png"
   },
   {
     "title": "Video",
     "link": "/",
     "button": "Coming Soon!",
-    "image": "../images/cta-bgs/code.png"
+    "image": "../images/cta-bgs/videography.png"
   }]
 }
