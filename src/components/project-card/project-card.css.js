@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { accent, pink } from 'constants/theme';
+import { accent, pink, shadowLight } from 'constants/theme';
 import MEDIA from 'helpers/mediaTemplates';
 
 export const CardContainer = styled.div`
@@ -33,7 +33,7 @@ export const Image = styled.img`
   width: 100%;
   min-width: 300px;
   border-radius: 0.25rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: ${shadowLight};
 `;
 
 export const InfoBox = styled.div`

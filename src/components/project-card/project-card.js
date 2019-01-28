@@ -42,10 +42,6 @@ const ProjectCard = ({
       </LinkBox>
     </ImageBox>
     <InfoBox>
-      {/* <Title>{title}</Title>
-      <SubTitle>
-        <span>{role}</span> | {timeframe}
-      </SubTitle> */}
       <Heading title={title} role={role} timeframe={timeframe} />
       {description ? (
         <div
