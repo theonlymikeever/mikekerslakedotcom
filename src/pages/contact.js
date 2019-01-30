@@ -5,6 +5,27 @@ import Layout from 'components/layout';
 import Box from 'components/box';
 import Head from 'components/head';
 import Title from 'components/title';
+import { ButtonContainer, Button } from 'components/buttons/contact-btn.css';
+
+const emailAddress = 'mailto:hello@mikekerslake.com';
+
+const EmailBtn = () => (
+  <ButtonContainer>
+    <Button
+      id="email"
+      onClick={() => (document.getElementById('email').href = emailAddress)}
+      onMouseEnter={() =>
+        (document.getElementById('email').href = emailAddress)
+      }
+      onMouseLeave={() =>
+        (document.getElementById('email').href = 'noSpamForYOU')
+      }
+      href=""
+    >
+      Email Me
+    </Button>
+  </ButtonContainer>
+);
 
 const Contact = ({ data }) => (
   <Layout>
@@ -18,6 +39,7 @@ const Contact = ({ data }) => (
           __html: data.contactJson.content.childMarkdownRemark.html,
         }}
       />
+      <EmailBtn />
     </Box>
   </Layout>
 );

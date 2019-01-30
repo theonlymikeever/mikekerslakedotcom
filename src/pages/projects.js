@@ -53,7 +53,17 @@ export const query = graphql`
         timeframe
         demoLink
         githubLink
-        image
+        npmLink
+        image {
+          childImageSharp {
+            fluid {
+              src
+              srcSet
+              originalImg
+              originalName
+            }
+          }
+        }
       }
     }
   }

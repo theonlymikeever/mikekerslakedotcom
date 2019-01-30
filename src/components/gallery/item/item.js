@@ -16,7 +16,7 @@ const Item = ({ title, copy, image }) => (
 Item.propTypes = {
   title: PropTypes.string,
   copy: PropTypes.string,
-  image: PropTypes.object.isRequired,
+  image: PropTypes.object,
 };
 
 export default Item;

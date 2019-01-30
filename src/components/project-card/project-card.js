@@ -5,11 +5,22 @@ import {
   ImageBox,
   Image,
   InfoBox,
-  Heading,
-  SubHeading,
+  Title,
+  SubTitle,
   Link,
   LinkBox,
+  HeadingBox,
 } from './project-card.css';
+
+const Heading = ({ title, role, timeframe }) => {
+  return (
+    <HeadingBox>
+      <Title>{title}</Title>
+      <SubTitle bold>{role}</SubTitle>
+      <SubTitle>{timeframe}</SubTitle>
+    </HeadingBox>
+  );
+};
 
 const ProjectCard = ({
   title,
@@ -19,20 +30,19 @@ const ProjectCard = ({
   image,
   demoLink,
   githubLink,
+  npmLink,
 }) => (
   <CardContainer>
     <ImageBox>
-      <Image src={image} alt={title} />
+      <Image src={image.childImageSharp.fluid.src} alt={title} />
       <LinkBox>
         {demoLink ? <Link href={demoLink}>Demo</Link> : ' '}
         {githubLink ? <Link href={githubLink}>Github</Link> : ' '}
+        {npmLink ? <Link href={npmLink}>NPM</Link> : ' '}
       </LinkBox>
     </ImageBox>
     <InfoBox>
-      <Heading>{title}</Heading>
-      <SubHeading>
-        <span>{role}</span> | {timeframe}
-      </SubHeading>
+      <Heading title={title} role={role} timeframe={timeframe} />
       {description ? (
         <div
           dangerouslySetInnerHTML={{
@@ -49,9 +59,16 @@ ProjectCard.propTypes = {
   role: PropTypes.string,
   timeframe: PropTypes.string,
   description: PropTypes.object,
-  image: PropTypes.string,
+  image: PropTypes.object,
   demoLink: PropTypes.string,
   githubLink: PropTypes.string,
+  npmLink: PropTypes.string,
+};
+
+Heading.propTypes = {
+  title: PropTypes.string,
+  role: PropTypes.string,
+  timeframe: PropTypes.string,
 };
 
 export default ProjectCard;
