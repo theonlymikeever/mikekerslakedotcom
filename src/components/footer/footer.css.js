@@ -3,7 +3,7 @@ import MEDIA from 'helpers/mediaTemplates';
 
 export const FooterContainer = styled.div`
   padding: 25px 10px;
-  margin: 0 auto;
+  margin: 1rem auto 1rem auto;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -18,6 +18,7 @@ export const FooterContainer = styled.div`
     max-width: 800px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'copyright social';
+    grid-gap: 80px;
   `};
 
   .social-icons {
