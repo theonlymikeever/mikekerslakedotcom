@@ -11,7 +11,7 @@
     "build": "npm run build:dir && npm run build:favicons && gatsby build",
     "heroku-postbuild": "gatsby build",
     "test": "ava **/*.test.js --verbose",
-    "start": "gatsby serve"
+    "start": "gatsby serve --port ${PORT}"
   },
   "dependencies": {
     "@reach/dialog": "^0.1.2",
