@@ -1,6 +1,7 @@
 {
   "title": "Software Projects",
   "content": "projects.md",
+  "meta": "Learn more about software projects by Mike Kerslake, built from the ground up in React, Redux, Node and more. Live demos, videos and github links are available to take a deeper dive.",
   "projects": [{
     "title": "obey the coin - cli",
     "role": "Developer, Maintainer",
