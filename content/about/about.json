@@ -1,6 +1,7 @@
 {
   "title": "About",
   "content": "content.md",
+  "meta": "Mike Kerslake is a software engineer, specializing in web application development, a photographer, with a love for portraiture and an artist, whom loves to explore the intersection of the digital and the real.",
   "image": "../images/about/headshot-wide.png",
   "skills": {
     "proficient": ["one", "two", "three"],

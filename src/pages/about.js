@@ -8,7 +8,10 @@ import PortraitContainer from 'components/portrait-container';
 
 const About = ({ data }) => (
   <Layout>
-    <Head pageTitle={data.aboutJson.title} />
+    <Head
+      pageTitle={data.aboutJson.title}
+      siteDescription={data.aboutJson.meta}
+    />
     <Box>
       <PortraitContainer {...data.aboutJson} />
       <Link to="/" style={{ display: 'block' }}>
@@ -36,6 +39,7 @@ export const query = graphql`
           html
         }
       }
+      meta
       image {
         childImageSharp {
           fluid(

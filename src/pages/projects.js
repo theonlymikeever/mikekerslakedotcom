@@ -9,7 +9,10 @@ import Title from 'components/title';
 
 const Projects = ({ data }) => (
   <Layout>
-    <Head pageTitle={data.projectsJson.title} />
+    <Head
+      pageTitle={data.projectsJson.title}
+      siteDescription={data.projectsJson.meta}
+    />
     <Box>
       <Title as="h2" size="large">
         {data.projectsJson.title}
@@ -42,6 +45,7 @@ export const query = graphql`
           html
         }
       }
+      meta
       projects {
         title
         description {
