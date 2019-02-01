@@ -29,7 +29,10 @@ const EmailBtn = () => (
 
 const Contact = ({ data }) => (
   <Layout>
-    <Head pageTitle={data.contactJson.title} />
+    <Head
+      pageTitle={data.contactJson.title}
+      siteDescription={data.contactJson.meta}
+    />
     <Box>
       <Title as="h2" size="large">
         {data.contactJson.title}
@@ -54,6 +57,7 @@ export const query = graphql`
   query ContactQuery {
     contactJson {
       title
+      meta
       content {
         childMarkdownRemark {
           html
