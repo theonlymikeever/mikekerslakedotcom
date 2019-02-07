@@ -1,11 +1,27 @@
 import React from 'react';
 import { FooterContainer } from './footer.css';
 import { InstagramIcon, LinkedInIcon, TwitterIcon } from '../social-icons';
+import { version } from '../../../package.json';
+
+const year = new Date().getFullYear();
+
+const VersionDisplay = () => (
+  <a
+    href="https://github.com/theonlymikeever/mikekerslakedotcom/releases"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    v{version}
+  </a>
+);
 
 const CopyRightFooter = () => (
   <div className="copyright">
-    <span className="bold">© {new Date().getFullYear()} Mike Kerslake.</span>
-    Site built w/ React & too much coffee (probably).
+    <span className="bold">© {year} Mike Kerslake.</span>
+    <p>
+      {version ? <VersionDisplay /> : null} Site built w/ React & too much
+      coffee (probably).
+    </p>
   </div>
 );
 

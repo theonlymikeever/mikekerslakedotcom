@@ -48,6 +48,8 @@ export const FooterContainer = styled.div`
       text-align: left;
       font-size: inherit;
       justify-self: start;
+      width: 500px;
+      max-width: 100%;
     `};
 
     .bold {
