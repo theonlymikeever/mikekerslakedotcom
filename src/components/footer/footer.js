@@ -5,21 +5,21 @@ import { version } from '../../../package.json';
 
 const year = new Date().getFullYear();
 
-const VersionDisplay = () => (
-  <a
-    href="https://github.com/theonlymikeever/mikekerslakedotcom/releases"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    v{version}
-  </a>
-);
+// const VersionDisplay = () => (
+//   <a
+//     href="https://github.com/theonlymikeever/mikekerslakedotcom/releases"
+//     target="_blank"
+//     rel="noopener noreferrer"
+//   >
+//     v{version}
+//   </a>
+// );
 
 const CopyRightFooter = () => (
   <div className="copyright">
     <span className="bold">© {year} Mike Kerslake.</span>
     <p>
-      {version ? <VersionDisplay /> : null} Site built w/ React & too much
+      {version ? `v${version}` : null} Site built w/ React & too much
       coffee (probably).
     </p>
   </div>
