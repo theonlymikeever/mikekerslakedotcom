@@ -5,10 +5,12 @@ import Box from 'components/box';
 import Title from 'components/title';
 // import Gallery from 'components/gallery';
 import CtaGrid from 'components/cta-grid';
+import Head from 'components/head';
 import { graphql } from 'gatsby';
 
 const Index = ({ data }) => (
   <Layout>
+    <Head pageTitle={data.homeJson.title} />
     <Box>
       <Title as="h2">
         {data.homeJson.content.childMarkdownRemark.rawMarkdownBody}
