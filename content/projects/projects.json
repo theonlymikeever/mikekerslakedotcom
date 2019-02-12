@@ -3,14 +3,6 @@
   "content": "projects.md",
   "meta": "Learn more about software projects by Mike Kerslake, built from the ground up in React, Redux, Node and more. Live demos, videos and github links are available to take a deeper dive.",
   "projects": [{
-    "title": "obey the coin - cli",
-    "role": "Developer, Maintainer",
-    "timeframe": "November 2018 - ongoing",
-    "description": "descriptions/obey-the-coin.md",
-    "githubLink": "https://github.com/theonlymikeever/obey-the-coin-cli",
-    "npmLink": "https://www.npmjs.com/package/obey-the-coin",
-    "image": "../images/software-projects/otc-screen.png"
-  },{
     "title": "autobs - cli",
     "role": "Developer, Maintainer",
     "timeframe": "August 2018 - ongoing",
@@ -22,6 +14,14 @@
     "timeframe": "June 2018 - ongoing",
     "description": "descriptions/mvtjs.md",
     "image": "../images/software-projects/mvtjs-screen.png"
+  },{
+    "title": "obey the coin - cli",
+    "role": "Developer, Maintainer",
+    "timeframe": "November 2018 - ongoing",
+    "description": "descriptions/obey-the-coin.md",
+    "githubLink": "https://github.com/theonlymikeever/obey-the-coin-cli",
+    "npmLink": "https://www.npmjs.com/package/obey-the-coin",
+    "image": "../images/software-projects/otc-screen.png"
   },{
     "title": "ParQ",
     "role": "Developer",

@@ -1,7 +1,7 @@
 {
   "name": "mikekerslakedotcom",
   "author": "Mike Kerslake <hello@mikekerslake.com>",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "scripts": {
     "develop": "gatsby develop",
     "serve": "gatsby serve",
@@ -19,7 +19,7 @@
     "@reach/router": "^1.2.1",
     "@reach/visually-hidden": "^0.1.2",
     "babel-plugin-styled-components": "^1.10.0",
-    "gatsby": "^2.0.117",
+    "gatsby": "^2.0.119",
     "gatsby-image": "^2.0.29",
     "gatsby-plugin-offline": "^2.0.23",
     "gatsby-plugin-react-helmet": "^3.0.6",
