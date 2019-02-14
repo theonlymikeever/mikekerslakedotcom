@@ -1,0 +1,35 @@
+{
+  "title": "Read and Reading",
+  "content": "content.md",
+  "meta": "What better than the written word to experience art and learn? Check out what I've read and am currently reading.",
+  "books": [{
+    "title": "sample 1",
+    "link": "#",
+    "rating": 5,
+    "topic": "eg topic 1"
+  },
+  {
+    "title": "sample 2",
+    "link": "#",
+    "rating": 4,
+    "topic": "eg topic 2"
+  },
+  {
+    "title": "sample 3",
+    "link": "#",
+    "rating": 2,
+    "topic": "eg topic 3"
+  },
+  {
+    "title": "sample 4",
+    "link": "#",
+    "rating": 3,
+    "topic": "eg topic 4"
+  },
+  {
+    "title": "sample 5",
+    "link": "#",
+    "rating": 1,
+    "topic": "eg topic 5"
+  }]
+}
