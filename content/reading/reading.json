@@ -36,5 +36,18 @@
     "author": "author 5",
     "rating": 1,
     "topic": "eg topic 5"
-  }]
+  },
+  {
+    "title": "sample 6",
+    "link": "#",
+    "author": "author 1",
+    "rating": 3,
+    "topic": "eg topic 5"
+  }],
+  "currentBooks": [
+    "test book 1",
+    "test book 2",
+    "test book 3",
+    "test book 4"
+  ]
 }
