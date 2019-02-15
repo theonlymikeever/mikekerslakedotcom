@@ -1,10 +1,11 @@
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Layout from 'components/layout';
 import Box from 'components/box';
 import Head from 'components/head';
-// import Title from 'components/title';
+import Title from 'components/title';
 
 /* eslint-disable no-console */
 
@@ -14,16 +15,15 @@ const BooksContainer = ({ children }) => (
   </div>
 );
 
-const BookDisplay = ({ title, link, rating, topic }) => {
+const BookDisplay = ({ title, author, link, rating, topic }) => {
   return (
     <li>
-      {title} {link} {rating} {topic}
+      {title} by {author} - {link} - {rating} - {topic}
     </li>
   );
 };
 
 const Reading = ({ data }) => {
-  console.log(data)
   return (
     <Layout>
       <Head
@@ -31,17 +31,19 @@ const Reading = ({ data }) => {
         siteDescription={data.readingJson.meta}
       />
       <Box>
+        <Title as="h2" size="large">
+          {data.readingJson.title}
+        </Title>
         <div
           dangerouslySetInnerHTML={{
             __html: data.readingJson.content.childMarkdownRemark.html,
           }}
         />
-        <BooksContainer />
-        <div>
+        <BooksContainer>
           {data.readingJson.books.map(book => (
             <BookDisplay key={book.title} {...book} />
           ))}
-        </div>
+        </BooksContainer>
       </Box>
     </Layout>
   );
@@ -49,6 +51,7 @@ const Reading = ({ data }) => {
 
 BookDisplay.propTypes = {
   title: PropTypes.string,
+  author: PropTypes.string,
   rating: PropTypes.number,
   link: PropTypes.string,
   topic: PropTypes.string,
@@ -75,6 +78,7 @@ export const query = graphql`
       books {
         title
         link
+        author
         rating
         topic
       }
