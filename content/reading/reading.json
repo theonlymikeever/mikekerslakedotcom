@@ -5,30 +5,35 @@
   "books": [{
     "title": "sample 1",
     "link": "#",
+    "author": "author 1",
     "rating": 5,
     "topic": "eg topic 1"
   },
   {
     "title": "sample 2",
     "link": "#",
+    "author": "author 2",
     "rating": 4,
     "topic": "eg topic 2"
   },
   {
     "title": "sample 3",
     "link": "#",
+    "author": "author 3",
     "rating": 2,
     "topic": "eg topic 3"
   },
   {
     "title": "sample 4",
     "link": "#",
+    "author": "author 4",
     "rating": 3,
     "topic": "eg topic 4"
   },
   {
     "title": "sample 5",
     "link": "#",
+    "author": "author 5",
     "rating": 1,
     "topic": "eg topic 5"
   }]
