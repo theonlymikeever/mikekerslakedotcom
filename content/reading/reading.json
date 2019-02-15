@@ -3,46 +3,60 @@
   "content": "content.md",
   "meta": "What better than the written word to experience art and learn? Check out what I've read and am currently reading.",
   "books": [{
-    "title": "sample 1",
+    "title": "Modern Romance",
     "link": "#",
-    "author": "author 1",
-    "rating": 5,
-    "topic": "eg topic 1"
-  },
-  {
-    "title": "sample 2",
-    "link": "#",
-    "author": "author 2",
+    "author": "Aziz Ansari",
     "rating": 4,
-    "topic": "eg topic 2"
+    "topic": "Romance, Humor"
   },
   {
-    "title": "sample 3",
+    "title": "Et Tu, Babe?",
     "link": "#",
-    "author": "author 3",
-    "rating": 2,
-    "topic": "eg topic 3"
+    "author": "Mark Leyner",
+    "rating": 4,
+    "topic": "Fiction, Humor"
   },
   {
-    "title": "sample 4",
+    "title": "The Bell Jar",
     "link": "#",
-    "author": "author 4",
-    "rating": 3,
-    "topic": "eg topic 4"
+    "author": "Sylvia Plath",
+    "rating": 4,
+    "topic": "Fiction"
   },
   {
-    "title": "sample 5",
+    "title": "East of Eden",
     "link": "#",
-    "author": "author 5",
-    "rating": 1,
-    "topic": "eg topic 5"
+    "author": "John Steinbeck",
+    "rating": 5,
+    "topic": "Historical Fiction"
   },
   {
-    "title": "sample 6",
+    "title": "White Noise",
     "link": "#",
-    "author": "author 1",
-    "rating": 3,
-    "topic": "eg topic 5"
+    "author": "Don DeLillo",
+    "rating": 4,
+    "topic": "Contemporary Fiction"
+  },
+  {
+    "title": "The Corrections",
+    "link": "#",
+    "author": "Jonathan Franzen",
+    "rating": 5,
+    "topic": "Contemporary Fiction"
+  },
+  {
+    "title": "Against the Void",
+    "link": "#",
+    "author": "Morgan E. Balog",
+    "rating": 5,
+    "topic": "Contemporary Fiction"
+  },
+  {
+    "title": "Steve Jobs",
+    "link": "#",
+    "author": "Walter Isaacson",
+    "rating": 4,
+    "topic": "Biography"
   }],
   "currentBooks": [
     "test book 1",

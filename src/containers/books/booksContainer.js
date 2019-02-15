@@ -21,15 +21,15 @@ const columns = [
     Header: 'Title',
     accessor: 'title',
     Cell: props => <a href={props.original.link}>{props.value}</a>,
-    minWidth: 140,
+    minWidth: 180,
   },
   {
     Header: 'Author',
     accessor: 'author',
-    minWidth: 140,
+    minWidth: 180,
   },
   {
-    Header: 'Topic',
+    Header: 'Topic/Genre',
     accessor: 'topic',
     minWidth: 140,
   },
@@ -56,7 +56,7 @@ const Heading = styled.h2`
 const BooksContainer = ({ books }) => {
   return (
     <div>
-      <Heading>Current</Heading>
+      <Heading>Completed</Heading>
       <ReactTable
         columns={columns}
         data={books}
