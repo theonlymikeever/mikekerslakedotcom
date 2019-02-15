@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import ReactTable from 'react-table';
 import 'react-table/react-table.css';
 import { primary } from 'constants/theme';
+import styled from 'styled-components';
 
 const Star = () => (
   <svg height="25" width="23">
@@ -21,7 +22,6 @@ const columns = [
     accessor: 'title',
     Cell: props => <a href={props.original.link}>{props.value}</a>,
     minWidth: 140,
-    sortable: false,
   },
   {
     Header: 'Author',
@@ -44,15 +44,25 @@ const columns = [
 const config = {
   resizable: false,
   showPagination: false,
-  minRows: 10,
+  minRows: 5,
 };
 
 /* eslint-enable react/prop-types */
 
+const Heading = styled.h2`
+  text-align: center;
+`;
+
 const BooksContainer = ({ books }) => {
   return (
     <div>
-      <ReactTable columns={columns} data={books} {...config} />
+      <Heading>Current</Heading>
+      <ReactTable
+        columns={columns}
+        data={books}
+        style={{ margin: '0 auto' }}
+        {...config}
+      />
     </div>
   );
 };

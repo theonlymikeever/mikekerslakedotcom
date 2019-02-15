@@ -6,15 +6,25 @@ import Box from 'components/box';
 import Head from 'components/head';
 import Title from 'components/title';
 import BooksContainer from 'containers/books/booksContainer';
+import styled from 'styled-components';
 
-/* eslint-disable no-console */
+const BookList = styled.ul`
+  margin-top: 20px;
+  text-align: center;
+`;
+
+const Heading = styled.h2`
+  text-align: center;
+`;
+
 const CurrentReads = ({ books }) => (
-  <ul>
+  <BookList>
+    <Heading>In Progression</Heading>
     {books.map(book => (
       <li key={book}>{book}</li>
     ))}
-  </ul>
-)
+  </BookList>
+);
 
 const Reading = ({ data }) => {
   return (
@@ -32,8 +42,8 @@ const Reading = ({ data }) => {
             __html: data.readingJson.content.childMarkdownRemark.html,
           }}
         />
-        <CurrentReads books={data.readingJson.currentBooks} />
         <BooksContainer books={data.readingJson.books} />
+        <CurrentReads books={data.readingJson.currentBooks} />
       </Box>
     </Layout>
   );
