@@ -9,21 +9,38 @@ import BooksContainer from 'containers/books/booksContainer';
 import styled from 'styled-components';
 
 const BookList = styled.ul`
-  margin-top: 20px;
   text-align: center;
 `;
 
 const Heading = styled.h2`
+  margin-top: 20px;
   text-align: center;
 `;
 
+const HorizontalRule = styled.hr`
+  border: 0;
+  /* height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  ); */
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+`;
+
 const CurrentReads = ({ books }) => (
-  <BookList>
+  <>
     <Heading>In Progression</Heading>
-    {books.map(book => (
-      <li key={book}>{book}</li>
-    ))}
-  </BookList>
+    <HorizontalRule />
+    <BookList>
+      {books.map(book => (
+        <li key={book}>{book}</li>
+      ))}
+    </BookList>
+  </>
 );
 
 const Reading = ({ data }) => {
