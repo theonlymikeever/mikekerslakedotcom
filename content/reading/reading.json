@@ -13,7 +13,7 @@
     "title": "Et Tu, Babe?",
     "link": "#",
     "author": "Mark Leyner",
-    "rating": 4,
+    "rating": 3,
     "topic": "Fiction, Humor"
   },
   {
@@ -48,7 +48,7 @@
     "title": "Against the Void",
     "link": "#",
     "author": "Morgan E. Balog",
-    "rating": 5,
+    "rating": 4,
     "topic": "Contemporary Fiction"
   },
   {
@@ -59,9 +59,10 @@
     "topic": "Biography"
   }],
   "currentBooks": [
-    "test book 1",
-    "test book 2",
-    "test book 3",
-    "test book 4"
+    "The Power of Habit",
+    "The Clean Coder",
+    "Secrets of a JavaScript Ninja (2nd Ed.)",
+    "Blood Meridian",
+    "Infinite Jest (on deck)"
   ]
 }
