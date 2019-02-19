@@ -45,10 +45,10 @@
     "topic": "Contemporary Fiction"
   },
   {
-    "title": "Against the Void",
+    "title": "Isn't It Pretty to Think So?",
     "link": "#",
-    "author": "Morgan E. Balog",
-    "rating": 4,
+    "author": "Nick Miller",
+    "rating": 3,
     "topic": "Contemporary Fiction"
   },
   {
@@ -57,12 +57,37 @@
     "author": "Walter Isaacson",
     "rating": 4,
     "topic": "Biography"
+  },{
+    "title": "Paddle Your Own Canoe",
+    "link": "#",
+    "author": "Nick Offerman",
+    "rating": 4,
+    "topic": "Autobiography, Humor"
+  },{
+    "title": "How to Win Friends & Influence People",
+    "link": "#",
+    "author": "Dale Carnegie",
+    "rating": 4,
+    "topic": "Personal Development"
+  },{
+    "title": "Eloquent Javascript",
+    "link": "#",
+    "author": "Marijn Haverbeke",
+    "rating": 5,
+    "topic": "Computer Science"
+  },{
+    "title": "You Don't Know JS (book series)",
+    "link": "https://github.com/getify/You-Dont-Know-JS",
+    "author": "Kyle Simpson",
+    "rating": 4,
+    "topic": "Computer Science"
   }],
   "currentBooks": [
-    "The Power of Habit",
-    "The Clean Coder",
-    "Secrets of a JavaScript Ninja (2nd Ed.)",
     "Blood Meridian",
-    "Infinite Jest (on deck)"
+    "Just Kids",
+    "The Clean Coder",
+    "Secrets of a JavaScript Ninja",
+    "The Power of Habit",
+    "Infinite Jest [on deck]"
   ]
 }
