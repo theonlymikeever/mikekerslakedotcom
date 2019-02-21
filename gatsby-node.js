@@ -1,3 +1,4 @@
+const fs = require('fs');
 const path = require('path');
 const DirectoryNamedWebpackPlugin = require('directory-named-webpack-plugin');
 
@@ -20,18 +21,7 @@ exports.onCreateWebpackConfig = ({
 // data layer is bootstrapped to let plugins create pages from data.
 exports.createPages = ({ actions, graphql }) => {
   // see: https://www.gatsbyjs.org/docs/bound-action-creators/
-  const { createRedirect, createPage } = actions;
-
-  // SSL string validation
-  // require('./secrets');
-  createPage({
-    path:
-      '.well-known/acme-challenge/TpdiixwUCObIavOqpwYJJH4NSzMZWEn9ZYXfNSKQdVw',
-    component: path.resolve('./src/pages/ssl.js'),
-    context: {
-      content: process.env.SSL,
-    },
-  });
+  const { createRedirect } = actions;
 
   // One-off redirect, note trailing slash missing on fromPath and
   // toPath here.
@@ -62,3 +52,9 @@ exports.createPages = ({ actions, graphql }) => {
     }
   );
 };
+
+/* eslint-disable */
+exports.onPreBuild = (pages, callback) => {
+  // SSL Validation
+  fs.writeFileSync('./static/.well-known/acme-challenge/TpdiixwUCObIavOqpwYJJH4NSzMZWEn9ZYXfNSKQdVw',process.env.SSL);
+}
