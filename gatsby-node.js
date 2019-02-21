@@ -20,7 +20,18 @@ exports.onCreateWebpackConfig = ({
 // data layer is bootstrapped to let plugins create pages from data.
 exports.createPages = ({ actions, graphql }) => {
   // see: https://www.gatsbyjs.org/docs/bound-action-creators/
-  const { createRedirect } = actions;
+  const { createRedirect, createPage } = actions;
+
+  // SSL string validation
+  require('./secrets');
+  createPage({
+    path:
+      '.well-known/acme-challenge/TpdiixwUCObIavOqpwYJJH4NSzMZWEn9ZYXfNSKQdVw',
+    component: path.resolve('./src/pages/ssl.js'),
+    context: {
+      content: process.env.SSL,
+    },
+  });
 
   // One-off redirect, note trailing slash missing on fromPath and
   // toPath here.
