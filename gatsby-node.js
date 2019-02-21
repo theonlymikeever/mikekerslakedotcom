@@ -56,5 +56,12 @@ exports.createPages = ({ actions, graphql }) => {
 /* eslint-disable */
 exports.onPreBuild = (pages, callback) => {
   // SSL Validation
-  fs.writeFileSync('./static/.well-known/acme-challenge/TpdiixwUCObIavOqpwYJJH4NSzMZWEn9ZYXfNSKQdVw',process.env.SSL);
-}
+  require('dotenv').config({
+    path: `./.env.${process.env.NODE_ENV}`
+  });
+
+  fs.writeFileSync(
+    './static/.well-known/acme-challenge/TpdiixwUCObIavOqpwYJJH4NSzMZWEn9ZYXfNSKQdVw',
+    process.env.SSL
+  );
+};
