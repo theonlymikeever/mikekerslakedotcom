@@ -61,7 +61,7 @@ exports.onPreBuild = (pages, callback) => {
   });
 
   fs.writeFileSync(
-    './static/.well-known/acme-challenge/TpdiixwUCObIavOqpwYJJH4NSzMZWEn9ZYXfNSKQdVw',
+    './static/.well-known/acme-challenge/3FvPuy4sFMgSvNarLc6zcQwIsoYRCJdOnHcWIHgZ-x0',
     process.env.SSL
   );
 };
