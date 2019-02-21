@@ -23,7 +23,7 @@ exports.createPages = ({ actions, graphql }) => {
   const { createRedirect, createPage } = actions;
 
   // SSL string validation
-  require('./secrets');
+  // require('./secrets');
   createPage({
     path:
       '.well-known/acme-challenge/TpdiixwUCObIavOqpwYJJH4NSzMZWEn9ZYXfNSKQdVw',
