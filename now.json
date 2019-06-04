@@ -1,6 +1,7 @@
 {
   "version": 2,
   "name": "mikekerslakedotcom",
+  "alias": ["mikekerslake.com"],
   "builds": [
     {
       "src": "package.json",
